@@ -17,7 +17,7 @@ body {
 /* Header */
 header {
     height: 700px;
-    background-image: url('assets/images/hands.jpg');
+    background-image: url('../images/hands.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -166,7 +166,7 @@ header {
     align-items: center;
     gap: 30px;
     padding: 50px;
-    background-image: url('assets/images/world.jpg');
+    background-image: url('../images/world.jpg');
     background-size: cover;
     background-position: center;
     height: 700px;
