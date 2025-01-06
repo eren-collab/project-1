@@ -3,10 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Digital Age. A company specialized in digital marketing, influencer marketing and digital products">
+    <meta name="keywords" content="digital, digital marketing, marketing, influencer marketing, digital products">
     <title>The Digital Age</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="/assets/icons/logo.png">
 </head>
 <body>
+    <!-- Header -->
+  <div id="home">
+    <header>
+        <div class="header-content">
+            <img src="/assets/images/logo1.png" alt="Logo" class="logo">
+        </div>
+    </header>
+  </div>
+    <nav class="navbar">
+        <div class="navbar-brand">THE DIGITAL AGE</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section class="about-section" id="about">
+            <div class="about-box">
+                <p class="about-text">
+                    At <strong>The Digital Age</strong>, we were founded with the vision of revolutionizing the digital marketing landscape. 
+                    Our creative team of marketing strategists and tech enthusiasts came together with the passion 
+                    to help businesses and individuals become more visible in the digital space.
+                    We specialize in innovative digital marketing strategies, 
+                    offering tailored campaigns, influencer collaborations, and the creation of high-quality digital products. 
+                    By working closely with both rising and established influencers, we help brands build authentic connections with their audience.
+                    In addition to marketing services, we develop digital products such as 
+                    interactive webinars, eBooks, and branding tools. With a modern approach and a constant focus on innovation, we are setting new standards in the digital age.
+                </p>
+            </div>
+        </section>
+
+        <section class="services-section" id="services">
+            <div class="service-box">
+                <h3>Build a Powerful Brand Identity</h3>
+                <p>
+                    We help businesses create unique and memorable brand identities that stand out. 
+                    From logo design to visual storytelling, we ensure your brand reflects your values 
+                    and connects with your audience. Our strategic approach helps you build long-term 
+                    brand recognition and trust in your market.
+                </p>
+            </div>
+        
+            <div class="service-box">
+                <h3>Amplify Your Reach with Influencers</h3>
+                <p>
+                    Our influencer marketing strategies connect you with top voices in your industry. 
+                    We identify the right influencers who align with your brand values to drive engagement 
+                    and authenticity. Let us help you grow your audience through meaningful collaborations 
+                    and organic campaigns.
+                </p>
+            </div>
+        
+            <div class="service-box">
+                <h3>Create Impactful Digital Products</h3>
+                <p>
+                    We design and develop high-quality digital products that empower your business. 
+                    From eBooks and webinars to online courses and templates, our team ensures each 
+                    product is crafted to educate, engage, and convert your audience. Expand your 
+                    brand’s influence with valuable digital resources.
+                </p>
+            </div>
+        </section>
+        
+        <section class="contact-section">
+            <h2>Contact Us</h2>
+            <form class="contact-form" onsubmit="submitForm(event)">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+                <p class="success-message" id="successMessage">Thank you! Your message has been sent.</p>
+            </form>
+        </section>
+        
+    </main>
+
+    <!-- Footer-->
+    <footer class="footer-section">
+        <ul class="footer-links">
+            <li><a href="/legal/impressum.html">Impressum</a></li>
+            <li><a href="/legal/agb.html">Terms & Conditions</a></li>
+            <li><a href="/legal/privacy-policy.html">Privacy Policy</a></li>
+        </ul>
+        <p class="footer-copy">&copy; 2024 The Digital Age. All rights reserved.</p>
+    </footer>
+    
     
 </body>
 </html>
