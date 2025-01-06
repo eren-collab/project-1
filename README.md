@@ -25,13 +25,13 @@ The Digital Age is a modern and responsive website designed to showcase a digita
 
 ## Screenshots
 ### Responsive Design (All Devices)
-![Website shown on different devices](./assets/images/different-devices.png)
+![Website shown on different devices](assets/images/different-devices.png)
 
 ### HTML Validator Test
-![HTML Validator Test](./assets/images/html-check.png)
+![HTML Validator Test](assets/images/html-check.png)
 
 ### CSS Validator Test
-![CSS Validator Test](./assets/images/css-check.png)
+![CSS Validator Test](assets/images/css-check.png)
 
 ## Testing
 - The website was tested on major browsers: Chrome, Firefox, and Safari.
