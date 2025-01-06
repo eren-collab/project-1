@@ -17,7 +17,7 @@ body {
 /* Header */
 header {
     height: 700px;
-    background-image: url('/assets/images/hands.jpg');
+    background-image: url('docs/assets/images/hands.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -107,10 +107,10 @@ header {
 
 .about-section {
     display: flex;
-    justify-content: center; /* Zentriert den Text horizontal */
-    align-items: center;     /* Zentriert den Text vertikal */
-    text-align: center;      /* Zentriert den Text im Block */
-    height: 100vh;           /* Macht den Bereich so hoch wie der Bildschirm */
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;      
+    height: 100vh;        
     padding: 20px;
 }
 
@@ -166,7 +166,7 @@ header {
     align-items: center;
     gap: 30px;
     padding: 50px;
-    background-image: url('/assets/images/world.jpg');
+    background-image: url('docs/assets/images/world.jpg');
     background-size: cover;
     background-position: center;
     height: 700px;
