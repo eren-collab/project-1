@@ -19,23 +19,24 @@
   <div id="home">
     <header>
         <div class="header-content">
-            <img src="/assets/images/logo1.png" alt="Logo" class="logo">
+            <img src="/assets/images/logo1.png" alt="The Digital Age Company Logo" class="logo">
         </div>
     </header>
   </div>
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main navigation">
         <div class="navbar-brand">THE DIGITAL AGE</div>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home" aria-label="Go to Home Section">Home</a></li>
+            <li><a href="#about" aria-label="Go to About Section">About</a></li>
+            <li><a href="#services" aria-label="Go to Services Section">Services</a></li>
+            <li><a href="#contact" aria-label="Go to Contact Section">Contact</a></li>
         </ul>
     </nav>
 
     <!-- Main Content -->
     <main>
-        <section class="about-section" id="about">
+        <section class="about-section" id="about" aria-labelledby="about-heading">
+            <h1 id="about-heading">About The Digital Age</h1>
             <div class="about-box">
                 <p class="about-text">
                     At <strong>The Digital Age</strong>, we were founded with the vision of revolutionizing the digital marketing landscape. 
@@ -43,68 +44,51 @@
                     to help businesses and individuals become more visible in the digital space.
                     We specialize in innovative digital marketing strategies, 
                     offering tailored campaigns, influencer collaborations, and the creation of high-quality digital products. 
-                    By working closely with both rising and established influencers, we help brands build authentic connections with their audience.
-                    In addition to marketing services, we develop digital products such as 
-                    interactive webinars, eBooks, and branding tools. With a modern approach and a constant focus on innovation, we are setting new standards in the digital age.
                 </p>
             </div>
         </section>
 
-        <section class="services-section" id="services">
-            <div class="service-box">
-                <h3>Build a Powerful Brand Identity</h3>
-                <p>
-                    We help businesses create unique and memorable brand identities that stand out. 
-                    From logo design to visual storytelling, we ensure your brand reflects your values 
-                    and connects with your audience. Our strategic approach helps you build long-term 
-                    brand recognition and trust in your market.
-                </p>
+        <!-- Services Section -->
+        <section class="services-section" id="services" aria-labelledby="services-heading">
+            <h2 id="services-heading">Our Services</h2>
+            <div class="service-box" aria-labelledby="branding-title">
+                <h3 id="branding-title">Build a Powerful Brand Identity</h3>
+                <p>We help businesses create unique and memorable brand identities that stand out.</p>
             </div>
-        
-            <div class="service-box">
-                <h3>Amplify Your Reach with Influencers</h3>
-                <p>
-                    Our influencer marketing strategies connect you with top voices in your industry. 
-                    We identify the right influencers who align with your brand values to drive engagement 
-                    and authenticity. Let us help you grow your audience through meaningful collaborations 
-                    and organic campaigns.
-                </p>
+            <div class="service-box" aria-labelledby="influencer-title">
+                <h3 id="influencer-title">Amplify Your Reach with Influencers</h3>
+                <p>Our influencer marketing strategies connect you with top voices in your industry.</p>
             </div>
-        
-            <div class="service-box">
-                <h3>Create Impactful Digital Products</h3>
-                <p>
-                    We design and develop high-quality digital products that empower your business. 
-                    From eBooks and webinars to online courses and templates, our team ensures each 
-                    product is crafted to educate, engage, and convert your audience. Expand your 
-                    brand’s influence with valuable digital resources.
-                </p>
+            <div class="service-box" aria-labelledby="digital-title">
+                <h3 id="digital-title">Create Impactful Digital Products</h3>
+                <p>We design and develop high-quality digital products that empower your business.</p>
             </div>
         </section>
         
-        <section class="contact-section">
-            <h2>Contact Us</h2>
-            <form class="contact-form" onsubmit="submitForm(event)">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Us</h2>
+            <form class="contact-form" onsubmit="submitForm(event)" aria-label="Contact Form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required aria-required="true">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required aria-required="true">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" placeholder="Your Message" required aria-required="true"></textarea>
+                <button type="submit" aria-label="Send Message">Send Message</button>
                 <p class="success-message" id="successMessage">Thank you! Your message has been sent.</p>
             </form>
         </section>
-        
     </main>
 
-    <!-- Footer-->
-    <footer class="footer-section">
+    <!-- Footer Section -->
+    <footer class="footer-section" aria-label="Footer with legal links">
         <ul class="footer-links">
-            <li><a href="/legal/impressum.html">Impressum</a></li>
-            <li><a href="/legal/agb.html">Terms & Conditions</a></li>
-            <li><a href="/legal/privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="/legal/impressum.html" aria-label="View Impressum">Impressum</a></li>
+            <li><a href="/legal/agb.html" aria-label="View Terms and Conditions">Terms & Conditions</a></li>
+            <li><a href="/legal/privacy-policy.html" aria-label="View Privacy Policy">Privacy Policy</a></li>
         </ul>
         <p class="footer-copy">&copy; 2024 The Digital Age. All rights reserved.</p>
     </footer>
-    
-    
 </body>
 </html>
